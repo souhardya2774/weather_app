@@ -14,7 +14,7 @@ searchButton.addEventListener("click", () => {
 
 function fetchWeatherData(city) {
   const apiKey = "570b73210bd8e5fbb15c2c8390f0a564";
-  const apiUrl = `http://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
+  const apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
 
   fetch(apiUrl)
     .then((response) => response.json())
